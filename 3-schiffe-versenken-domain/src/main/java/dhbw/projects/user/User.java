@@ -6,10 +6,35 @@ public class User {
 
     private final UserId userId;
     private final String userName;
+    private int correctGuesses = 0;
+    private UserState userState;
+    private String[] correctFields = new String[15];
 
-    public User(UserId userId, String userName){
+    public User(UserId userId, String userName, UserState userState, String[] ships){
         this.userId = userId;
         this.userName = userName;
+        this.userState = userState;
+        this.correctFields = ships;
+    }
+
+    public String[] getCorrectFields() {
+        return correctFields;
+    }
+
+    public int getCorrectGuesses() {
+        return correctGuesses;
+    }
+
+    public UserState getUserState() {
+        return userState;
+    }
+
+    public void setCorrectGuesses(int correctGuesses) {
+        this.correctGuesses = correctGuesses;
+    }
+
+    public void setUserState(UserState userState) {
+        this.userState = userState;
     }
 
     public String getUserName() {
