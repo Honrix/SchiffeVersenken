@@ -23,7 +23,8 @@ public class Server {
 
     public void start() {
         // Maximalwert bestimmt die Anzahl an Spielern insgesamt
-        int players = Integer.parseInt(JOptionPane.showInputDialog("Zur Vereinfachung: \nWie viele Spieler sollen hinzugefügt werden? (Als Zahl)"));
+        int players = Integer.parseInt(JOptionPane.showInputDialog(
+                "Zur Vereinfachung: \nWie viele Spieler sollen hinzugefuegt werden? (Als Zahl)"));
         for (int i = 0; i < players; i++) {
             loginNewUser("User " + (i+1));
         }

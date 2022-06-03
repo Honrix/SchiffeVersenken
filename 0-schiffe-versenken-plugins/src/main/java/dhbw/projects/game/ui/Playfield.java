@@ -51,15 +51,16 @@ public class Playfield {
         ActionListener actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(userActionHandler.onUserGuessedField(input) == "False") {
+                String output =  userActionHandler.onUserGuessedField(input);
+                if(output == "False") {
                     System.out.println("Wait for the other Player to make a turn");
                 } else {
                     if (jButton.getBackground() == correctColor || jButton.getBackground() == falseColor) {
                         System.out.println("Already entered that input");
                     } else {
-                        if (userActionHandler.onUserGuessedField(input) == "Wrong") {
+                        if (output == "Wrong") {
                             jButton.setBackground(falseColor);
-                        } else if (userActionHandler.onUserGuessedField(input) == "Right") {
+                        } else if (output == "Right") {
                             jButton.setBackground(correctColor);
                         }
                         userActionHandler.switchUserState();

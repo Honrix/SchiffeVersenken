@@ -6,5 +6,7 @@ public class GameSession {
 
     private StateOfSession stateOfSession = StateOfSession.WAITING;
 
-
+    public StateOfSession getStateOfSession() {
+        return stateOfSession;
+    }
 }

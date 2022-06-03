@@ -11,10 +11,11 @@ public class UserInputAdapter {
     }
 
     public String getCorrectField(User user, String input){
-        if(enterUserGuess(user, input)){
+        boolean guess = enterUserGuess(user, input);
+        if(guess){
             return "Right";
         } else {
-            System.out.println(enterUserGuess(user, input));
+            System.out.println(guess);
             return "Wrong";
         }
     }

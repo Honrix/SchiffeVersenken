@@ -8,17 +8,17 @@ public class User {
     private final String userName;
     private int correctGuesses = 0;
     private UserState userState;
-    private String[] correctFields = new String[15];
+    private String[] fieldsOfShips;
 
     public User(UserId userId, String userName, UserState userState, String[] ships){
         this.userId = userId;
         this.userName = userName;
         this.userState = userState;
-        this.correctFields = ships;
+        this.fieldsOfShips = ships;
     }
 
-    public String[] getCorrectFields() {
-        return correctFields;
+    public String[] getFieldsOfShips() {
+        return fieldsOfShips;
     }
 
     public int getCorrectGuesses() {
