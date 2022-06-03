@@ -3,6 +3,7 @@
 ![Languages](https://img.shields.io/github/languages/count/Honrix/SchiffeVersenken?style=plastic)
 ![Last Commit](https://img.shields.io/github/last-commit/Honrix/SchiffeVersenken?style=plastic)
 ![Java](https://img.shields.io/github/languages/top/Honrix/SchiffeVersenken?style=plastic)
+[![codecov](https://codecov.io/gh/Honrix/SchiffeVersenken/branch/master/graph/badge.svg?token=JUJU964FDC)](https://codecov.io/gh/Honrix/SchiffeVersenken)
 
 Dieses Repo dient als ein erster Ansatz für das berühmte Spiel "Schiffe versenken". Hier geht es darum, dass zwei verschiedene Spieler jeweils ein 8x8-Feld besitzen, in dem sich ihre Schiffe befinden. Ziel ist es, die Felder zu erraten, auf dessen Feldern die Schiffe des Gegners sitzen. Hat man alle Felder eines Schiffes getroffen, hat man dieses versenkt. 
 
